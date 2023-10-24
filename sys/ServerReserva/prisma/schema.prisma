@@ -1,0 +1,50 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+// modelo de Usuários
+model Usuario {
+  id         Int       @id @default(autoincrement())
+  nome       String
+  email      String    @unique
+  is_admin   Boolean
+  created_at DateTime  @default(now())
+  updated_at DateTime
+
+  reserva    Reserva[]
+
+  @@map("usuario")
+}
+
+// modelo de Locais
+model Local {
+  id         Int       @id @default(autoincrement())
+  descricao  String
+  created_at DateTime  @default(now())
+  updated_at DateTime
+
+  reserva    Reserva[]
+
+  @@map("local")
+}
+
+// modelo de Reservas
+model Reserva {
+  id         Int      @id @default(autoincrement())
+  hora_ini   DateTime
+  hora_fim   DateTime
+  usuario_id  Int
+  local_id    Int
+  created_at DateTime @default(now())
+  updated_at DateTime
+
+  user     Usuario @relation(fields: [usuario_id], references: [id])
+  location Local   @relation(fields: [local_id], references: [id])
+
+  @@map("reserva")
+}

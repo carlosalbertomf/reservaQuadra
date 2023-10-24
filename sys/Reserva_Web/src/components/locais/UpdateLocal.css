@@ -1,0 +1,68 @@
+.update-local-container {
+  background-color: #2f2f2f;
+  padding: 20px;
+  border-radius: 15px;
+  color: #b0b0b0;
+  max-width: 600px;
+  margin: auto;
+}
+
+.update-local-container h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.update-local-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.update-local-container label {
+  margin-bottom: 0.5rem;
+  color: #b0b0b0;
+}
+
+.update-local-container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 1rem;
+  border: 1px solid #b0b0b0;
+  border-radius: 5px;
+  background-color: #333333;
+  color: #b0b0b0;
+}
+
+.update-local-container .button,
+.update-local-container .button-cancel,
+.update-local-container .button-back {
+  border-radius: 0;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: #4a4a4a;
+  color: #fff;
+  margin: 0.5rem;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.update-local-container .button:hover,
+.update-local-container .button-cancel:hover,
+.update-local-container .button-back:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 600px) {
+  .update-local-container {
+    padding: 10px;
+  }
+
+  .update-local-container input,
+  .update-local-container .button,
+  .update-local-container .button-cancel,
+  .update-local-container .button-back {
+    padding: 5px;
+  }
+}

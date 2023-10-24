@@ -1,0 +1,76 @@
+.createLocal-container {
+    max-width: 600px;
+    margin: auto;
+    background-color: #282c34;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .createLocal-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .createLocal-container h3 {
+    color: white; /* Ajuste da cor do título para branco */
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .button {
+    padding: 10px;
+    font-size: 1rem;
+    color: white; /* Ajuste para harmonizar com o fundo escuro */
+  }
+  
+  .link-button {
+    text-decoration: none;
+    color: #007bff;
+    cursor: pointer;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .createLocal-container label {
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+  .createLocal-container input {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #b0b0b0;
+    background-color: #333333;
+    color: #b0b0b0;
+  }
+  
+  .createLocal-container .button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .createLocal-container .buttonConfirm {
+    background-color: green;
+  }
+  
+  .createLocal-container .buttonClear {
+    background-color: red;
+  }
+  
+  .create-local-modal {
+    /* ... (sem alterações aqui) */
+  }
+  
