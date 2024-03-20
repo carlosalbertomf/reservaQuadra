@@ -30,6 +30,7 @@ const AppRoutes = () => {
           <Route path="/reserva/:id" element={<UpdateReserva />} />
 
           <Route path="/usuario" element={<ListUsuario />} />
+          <Route path="/usuario/:email" element={<ListUsuario />} />
           <Route path="/usuario/novo" element={<CreateUsuario />} />
           <Route path="/usuario/:id" element={<UpdateUsuario />} />
         </Routes>

@@ -5,17 +5,17 @@ export class CreateUsuarioController {
     const { id, nome, email, is_admin } = request.body;
 
     // Verifique se o nome de usuário já existe no banco de dados
-    const existingUsuario = await prisma.usuario.findUnique({
-      where: {
-        nome,
-      },
-    });
+    //const existingUsuario = await prisma.usuario.findUnique({
+    //  where: {
+    //    nome,
+    //  },
+    //});
 
-    if (existingUsuario) {
-      return response
-        .status(400)
-        .json({ error: "Nome de usuário já existe no banco de dados." });
-    }
+    //if (existingUsuario) {
+    //  return response
+    //    .status(400)
+    //    .json({ error: "Nome de usuário já existe no banco de dados." });
+    //}
 
     const usuario = await prisma.usuario.create({
       data: {
