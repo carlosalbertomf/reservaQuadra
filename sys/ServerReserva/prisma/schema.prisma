@@ -44,7 +44,7 @@ model Reserva {
   updated_at DateTime
 
   user     Usuario @relation(fields: [usuario_id], references: [id])
-  location Local   @relation(fields: [local_id], references: [id])
+  location Local   @relation(fields: [local_id], references: [id], onDelete: Cascade)
 
   @@map("reserva")
 }
